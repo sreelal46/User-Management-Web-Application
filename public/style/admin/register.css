@@ -146,3 +146,10 @@ button.active {
   color: #aaa;
   cursor: pointer;
 }
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #262626;
+}
