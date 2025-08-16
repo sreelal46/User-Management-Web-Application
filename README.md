@@ -56,15 +56,16 @@ This project includes both **User** and **Admin** features with authentication, 
    git clone [https://github.com/your-username/user-management.git](https://github.com/sreelal46/User-Management-Web-Application)
    cd user-management
    ```
-   2.Install dependencies
+2. Install dependencies
    ```bash
   npm install
   ```
-3.Create a .env file in the root directory and add:
-
+3. Create a .env file in the root directory and add:
+```bash
 PORT=5000
 SESSION_SECRET=your_secret_key
-
-4.Run the server
-
+ ```
+4. Run the server
+```bash
 npm start
+ ```
