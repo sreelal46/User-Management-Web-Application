@@ -53,13 +53,13 @@ This project includes both **User** and **Admin** features with authentication, 
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/user-management.git
+   git clone [https://github.com/your-username/user-management.git](https://github.com/sreelal46/User-Management-Web-Application)
    cd user-management
    ```
    2.Install dependencies
-
-npm install
-
+   ```bash
+  npm install
+  ```
 3.Create a .env file in the root directory and add:
 
 PORT=5000
