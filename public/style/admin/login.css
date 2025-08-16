@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.admin-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 5px;
+}
+
+.admin-subtitle {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0095f6;
+  box-shadow: 0 0 0 2px rgba(0, 149, 246, 0.2);
+}
+
+.forgot-link {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #00376b;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0077cc;
+}
+
+.security-note {
+  font-size: 12px;
+  color: #8e8e8e;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.two-factor-toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dbdbdb;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0095f6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.toggle-label {
+  font-size: 13px;
+  color: #262626;
+}
+.signup {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  /* border: 1px solid #dbdbdb; */
+  width: 100%;
+  background-color: white;
+}
+
+.signup a {
+  color: #0095f6;
+  font-weight: 600;
+  text-decoration: none;
+}

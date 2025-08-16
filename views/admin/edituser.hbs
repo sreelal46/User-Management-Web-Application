@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit User</title>
+  <link rel="stylesheet" href="/style/admin/edit-user.css">
+
+</head>
+
+<body>
+  <div class="edit-container">
+    <!-- Instagram Logo -->
+    <img class="logo" src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png"
+      alt="Instagram">
+
+    <h2 class="title">Edit User</h2>
+    <small style="color: red;">{{message}}</small>
+
+    <form id="editForm" method="POST" class="edit-form" action="/admin/edit/{{user._id}}">
+      <input type="hidden" name="id" id="editId">
+
+      <!-- Username -->
+      <div class="form-group">
+        <input type="text" name="username" id="editName" value="{{user.username}}" placeholder="Username">
+        <small id="editName-error" class="error-msg"></small>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <input type="email" name="email" id="editEmail" value="{{user.email}}" placeholder="Email">
+        <small id="editEmail-error" class="error-msg"></small>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <input type="text" name="password" id="editPassword" placeholder="Password">
+        <small id="editPassword-error" class="error-msg"></small>
+      </div>
+
+      <!-- Actions -->
+      <button type="submit" class="btn-primary">Change</button>
+      <a href="/admin/dashboard" class="btn-secondary">Cancel</a>
+    </form>
+  </div>
+
+
+
+
+
+  <script src="/js/admin/editUserValidation.js"></script>
+
+</body>
+
+</html>

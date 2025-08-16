@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.main-container {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  /* border: 1px solid #dbdbdb; */
+  border-radius: 1px;
+  padding: 20px 40px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin: 22px auto 12px;
+  width: 175px;
+}
+
+.signup-header {
+  color: #8e8e8e;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 9px 8px 7px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  input {
+    height: 45px; /* slightly smaller on tiny screens */
+    font-size: 14px;
+  }
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #a8a8a8;
+}
+
+.form-note {
+  color: #8e8e8e;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+button {
+  width: 100%;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button.active {
+  opacity: 1;
+}
+
+.login {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  /* border: 1px solid #dbdbdb; */
+  width: 100%;
+  background-color: white;
+}
+
+.login a {
+  color: #0095f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+.password-input-wrapper {
+  position: relative;
+}
+
+.password {
+  width: 100%;
+}
+
+.password-input-wrapper input {
+  padding-right: 45px;
+}
+
+.password-input-wrapper i {
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #aaa;
+  cursor: pointer;
+}
